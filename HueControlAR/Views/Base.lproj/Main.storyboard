@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="HueControlAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Yub-EC-lVk" appends="YES" id="hSF-TW-B05"/>
+                                </connections>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AnK-lX-hep">
+                                <rect key="frame" x="114" y="771" width="186" height="65"/>
+                                <color key="backgroundColor" red="0.018645260483026505" green="0.47766226530075073" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="WHj-Po-PMw"/>
+                                    <constraint firstAttribute="width" constant="186" id="hF2-HU-WTN"/>
+                                </constraints>
+                                <state key="normal" title="Activate Light Control">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="activateLightControl:" destination="BV1-FR-VrT" eventType="touchUpInside" id="NhK-Sx-AuO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wH2-IC-6aA">
+                                <rect key="frame" x="294" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.018645260479999998" green="0.4776622653" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="B3f-0j-PoO"/>
+                                    <constraint firstAttribute="height" constant="50" id="pdk-0G-eVW"/>
+                                </constraints>
+                                <state key="normal" title="Pick Color">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickColorTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="CbO-5U-V4Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyK-t0-T6i">
+                                <rect key="frame" x="20" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.018645260479999998" green="0.4776622653" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Set Color">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="setColorTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="zdk-Sd-kVM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U61-U7-elm">
+                                <rect key="frame" x="346" y="709" width="48" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="0.80504511443661975" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="sh3-sp-oMR"/>
+                                    <constraint firstAttribute="width" constant="48" id="wot-0v-zjx"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="color-picker"/>
+                                <connections>
+                                    <action selector="colorPickerTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="V5l-kR-4UA"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color-picker" translatesAutoresizingMaskIntoConstraints="NO" id="j1n-gg-xV1">
+                                <rect key="frame" x="207" y="414" width="34" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="Iee-cA-rZQ"/>
+                                    <constraint firstAttribute="height" constant="34" id="mPP-9S-Zwp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="U61-U7-elm" secondAttribute="trailing" constant="20" id="1v7-QG-Guh"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="j1n-gg-xV1" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" constant="17" id="J6Z-DJ-CHN"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="wH2-IC-6aA" secondAttribute="trailing" constant="20" id="Tyu-YE-W5O"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="jyK-t0-T6i" firstAttribute="height" secondItem="wH2-IC-6aA" secondAttribute="height" id="bCy-oV-ztL"/>
+                            <constraint firstItem="jyK-t0-T6i" firstAttribute="width" secondItem="wH2-IC-6aA" secondAttribute="width" id="cqb-om-RX9"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="AnK-lX-hep" secondAttribute="bottom" constant="26" id="dTY-N1-Uqn"/>
+                            <constraint firstItem="j1n-gg-xV1" firstAttribute="centerY" secondItem="U0K-SW-4ec" secondAttribute="centerY" constant="-17" id="iqg-cN-QPN"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="jyK-t0-T6i" secondAttribute="bottom" constant="30" id="paL-lK-amp"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                            <constraint firstItem="jyK-t0-T6i" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="20" id="vSk-Fq-Cpz"/>
+                            <constraint firstItem="wH2-IC-6aA" firstAttribute="top" secondItem="U61-U7-elm" secondAttribute="bottom" constant="25" id="ygl-bI-0uy"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="wH2-IC-6aA" secondAttribute="bottom" constant="30" id="zEV-tZ-c3p"/>
+                            <constraint firstItem="AnK-lX-hep" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="zjS-7c-eEh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <connections>
+                        <outlet property="activateLightControlButton" destination="AnK-lX-hep" id="xgd-JT-XPr"/>
+                        <outlet property="colorPickerButton" destination="U61-U7-elm" id="Su9-Pt-GsR"/>
+                        <outlet property="colorPickerImage" destination="j1n-gg-xV1" id="l7z-IV-3VM"/>
+                        <outlet property="pickColorButton" destination="wH2-IC-6aA" id="ijY-2i-WOu"/>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="setColorButton" destination="jyK-t0-T6i" id="gT9-U3-lYl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Yub-EC-lVk">
+                    <connections>
+                        <action selector="sceneViewTapped:" destination="BV1-FR-VrT" id="qhG-dU-dyl"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="18.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="color-picker" width="48" height="48"/>
+    </resources>
+</document>

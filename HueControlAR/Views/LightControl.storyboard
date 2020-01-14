@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BZg-Gc-nMb">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Light Control View Controller-->
+        <scene sceneID="2IR-HZ-Syk">
+            <objects>
+                <viewController id="BZg-Gc-nMb" customClass="LightControlViewController" customModule="HueControlAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b4D-LV-HR4">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Fz-SS-R2x">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Fz-SS-R2x" firstAttribute="leading" secondItem="gDq-Nq-Mx7" secondAttribute="leading" id="HQs-94-bvf"/>
+                            <constraint firstAttribute="bottom" secondItem="6Fz-SS-R2x" secondAttribute="bottom" id="O1H-8v-JOh"/>
+                            <constraint firstItem="6Fz-SS-R2x" firstAttribute="top" secondItem="b4D-LV-HR4" secondAttribute="top" id="Ysw-bH-uet"/>
+                            <constraint firstItem="gDq-Nq-Mx7" firstAttribute="trailing" secondItem="6Fz-SS-R2x" secondAttribute="trailing" id="d6d-tB-8cN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gDq-Nq-Mx7"/>
+                    </view>
+                    <size key="freeformSize" width="500" height="500"/>
+                    <connections>
+                        <outlet property="colorPickerContainerView" destination="6Fz-SS-R2x" id="Gh8-wb-OIs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VB4-Qe-MRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156.52173913043478" y="-66.294642857142861"/>
+        </scene>
+    </scenes>
+</document>

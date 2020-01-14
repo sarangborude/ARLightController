@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.8.2)
+  - ChromaColorPicker (1.7.2)
+  - EFColorPicker (5.0.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ChromaColorPicker
+  - EFColorPicker
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ChromaColorPicker
+    - EFColorPicker
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ChromaColorPicker: 78194fbae9f342d3781ac178c4d92c7652197d18
+  EFColorPicker: cdc922e3e334c2c3e494439c3c015e585e1ce7d9
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: d6cee6d32fa0da95cbf7e449983a63d88cc48a32
+
+COCOAPODS: 1.6.1
