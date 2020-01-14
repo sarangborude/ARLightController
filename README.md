@@ -2,6 +2,10 @@
 
 Control your philips hue lamps with ARKit iOS app.
 
+The project uses cocoapods so after cloning, go the directory where the .xcworkspace file is and fun
+"pod install" in terminal to install the dependencies.
+After that open the .xcworkspace file and then build and run.
+
 ## How to use
 1. Scan vertical planes like wall, a Yellow plane will indicate that the plane is detected.
 2. Now tap on the plane to place the UI near the lamps. (This is a prototype, you will need to know how your philips hue lamps are added in your hue bridge, specifically their ID)
